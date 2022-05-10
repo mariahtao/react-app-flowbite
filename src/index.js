@@ -1,15 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Footer from './Footer';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
-    <Footer />
+    <div className="flex h-screen">
+      <Sidebar />
+      <div className="container">
+        <App />
+        <Footer />
+      </div>
+    </div>
   </React.StrictMode>
 );
 

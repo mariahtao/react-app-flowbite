@@ -3,13 +3,17 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Flowbite sidebar.
-        </p>
+    <div>
+      <header>
+        <h1>
+          Flowbite sidebar
+        </h1>
       </header>
+      <main>
+        <p>
+          This is a sidebar made with react, tailwind, and flowbite.
+        </p>
+      </main>
     </div>
   );
 }
